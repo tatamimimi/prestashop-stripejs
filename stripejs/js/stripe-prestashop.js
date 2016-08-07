@@ -24,7 +24,7 @@
 *  International Registered Trademark & Property of PrestaShop SA
 */
 
-$(document).ready(function() {
+function takeStripe() {
 	/* Set Stripe's publishable key */
 	Stripe.setPublishableKey(stripe_public_key);
 
@@ -129,7 +129,7 @@ $(document).ready(function() {
 	/* Catch callback errors */
 	if ($('.stripe-payment-errors').text())
 		$('.stripe-payment-errors').fadeIn(1000);
-});
+};
 
 function stripeResponseHandler(status, response)
 {
