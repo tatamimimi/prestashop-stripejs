@@ -148,3 +148,7 @@ function stripeResponseHandler(status, response)
 		$('#stripe-payment-form').get(0).submit();
 	}
 }
+
+$(document).ready(function() {
+	takeStripe();
+});
